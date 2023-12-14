@@ -6,10 +6,12 @@ local function set_keymap()
 	local map = vim.keymap.set
 	local option = { noremap = true, silent = true }
 
-	map("n", keys.jump_left_window, "<C-W>h", option)
-	map("n", keys.jump_down_window, "<C-W>j", option)
-	map("n", keys.jump_up_window, "<C-W>k", option)
-	map("n", keys.jump_right_window, "<C-W>l", option)
+	-- map("n", keys.jump_left_window, "<C-W>h", option)
+	-- map("n", keys.jump_down_window, "<C-W>j", option)
+	-- map("n", keys.jump_up_window, "<C-W>k", option)
+	-- map("n", keys.jump_right_window, "<C-W>l", option)
+	map("n", keys.jump_left_buffer, ":BufferLineCyclePrev<CR>", opt)
+	map("n", keys.jump_right_buffer, ":BufferLineCycleNext<CR>", opt)
 
 	vim.cmd([[
     " press esc to cancel search highlight

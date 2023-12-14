@@ -6,10 +6,14 @@ return {
 	leader = " ",
 
 	-- Use the shortcut to switch/jump window.
-	jump_left_window = "<C-h>",
-	jump_right_window = "<C-l>",
-	jump_up_window = "<C-k>",
-	jump_down_window = "<C-j>",
+	-- jump_left_window = "<C-h>",
+	-- jump_right_window = "<C-l>",
+	-- jump_up_window = "<C-k>",
+	-- jump_down_window = "<C-j>",
+
+	-- Use the shortcut to switch buffers
+	jump_left_buffer = "<C-h>",
+	jump_right_buffer = "<C-l>",
 
 	-- View other usage of the plugin: https://github.com/akinsho/bufferline.nvim
 	-- Use the shortcut to pick a buffer tab.
